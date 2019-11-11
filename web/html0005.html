@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 在head里面定义样式，style标记 -->
+    <style>
+        /* 样式选择器一 .样式名称 表示元素的class属性名称的套用效果 */
+        .mycolor {
+            /* 样式的注释，background是背景颜色，取值方式和color一样
+            例如 .mycolor的效果是蓝底白字
+            那么所有 class=："mycolor"的元素都是蓝底白字
+            */
+            color: #ffffff;
+            background-color: #0000ff;
+        }
+
+        .mybg {
+            /* 设置宽度和背景图片 */
+            width: 1000px;
+            background-image: url('img101.png');
+            /* 设置高度 */
+            height: 1000px;
+            /* 背景图片大小(缩放方式)  cover表示尽量适应元素的大小*/
+            background-size: cover;
+    </style>
+</head>
+
+<body>
+    <!-- 一个完全没有任何效果的非快级元素 span -->
+    <span>默认的没有任何效果</span>-span的后面
+    <!-- 没有任何效果的块级元素 div 但是元素默认宽度是容器的宽度 -->
+    <div>也没有任何效果</div>
+    divh后面的元素会另起一行
+    <!-- html15新定义的级元素，和div一模一样，只是带了语义 -->
+    <header>header只是语义是头部，并不会有实际效果</header>
+    <main>mian只是 页面主体</main>
+    <footer>footer脚部</footer>
+    <nav>nav导航栏</nav>
+    <menu>menu菜单栏,带有默认样式</menu>
+    <section>section-div的替代品，区块</section>
+    <!-- 
+        css入门
+        第一种样式定义,行内,通过style属性定义,优先级最高!
+        css分成俩个部分,样式名称:样式取值;每个样式通过;分隔颜色 color
+        取值，可以是颜色名称，例如red
+        可以是3个16进制数（0-f），分别代表rgb三原色的值red，green，blue
+        也可以是6个16进制数，每俩个是一个三原色，这个最专业
+     -->
+    <span style="color: green;">1</span>
+    <span style="color: #ff0;">2</span>
+    <span style="color: #ff00ff;">3</span>
+    <span style="color: rgb(0,0,255);">4</span>
+    <span style="color: aqua;">5</span>
+    <span style="color: pink;">6</span>
+    <hr>
+    <section class="mycolor">
+        <!--
+          第二种颜色样式，常用
+        -->
+        设置颜色！
+    </section>
+
+    <section class="mybg">
+        背景图片
+    </section>
+
+</body>
+
+</html>
