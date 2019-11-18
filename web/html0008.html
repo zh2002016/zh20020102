@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>七代火影</title>
+
     <style>
         .fs01 {
             /* 字体大小,单位是像素 */
@@ -22,7 +23,7 @@
         }
 
         .fs04 {
-            font-size: 2rem;
+            font-size: 2em;
         }
 
         .fs05 {
@@ -79,39 +80,42 @@
 </head>
 
 <body>
-    <section>
-        <h1>字体大小</h1>
-        <span>标准字体大小</span>
-        <span class="fs01">像素值1</span>
-        <span class="fs02">可以超出html标准字体大小</span>
-        <hr>
-        <div>
-            <div>标准字体大小</div>
-            <div class="fs03">容器字体大小倍数</div>
-            <div class="fs04">倍数2</div>
-            <div class="fs04">
-                em是容器倍数，所以是相对大小
-                <span class="fs03">这个会变大，因为容器字体比较大</span>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <div>标准字体大小</div>
-            <div class="fs05">基准字体倍数</div>
-            <div class="fs06">基准倍数2</div>
-            <div class="fs05">
-                rem不受容器影响
-                <div class="fs06">还是基准字体倍数</div>
-            </div>
+    <header style="text-align: right;">
+        <a href="index.html">返回目录</a></header>
 
+
+    <h1>字体大小</h1>
+    <span>标准字体大小</span>
+    <span class="fs01">像素值1</span>
+    <span class="fs02">可以超出html标准字体大小</span>
+    <hr>
+    <div>
+        <div>标准字体大小</div>
+        <div class="fs03">容器字体大小倍数</div>
+        <div class="fs04">倍数2</div>
+        <div class="fs04">
+            em是容器倍数，所以是相对大小
+            <span class="fs03">这个会变大，因为容器字体比较大</span>
         </div>
-        <hr>
-        <div>
-            a标记的特别样式处理
-            <a href="#">超链接1</a>
-            | <a href="#">超链接2</a>
-            | <a href="#">超链接3</a>
+    </div>
+    <hr>
+    <div>
+        <div>标准字体大小</div>
+        <div class="fs05">基准字体倍数</div>
+        <div class="fs06">基准倍数2</div>
+        <div class="fs05">
+            rem不受容器影响
+            <div class="fs06">还是基准字体倍数</div>
         </div>
+
+    </div>
+    <hr>
+    <div>
+        a标记的特别样式处理
+        <a href="#">超链接1</a>
+        | <a href="#">超链接2</a>
+        | <a href="#">超链接3</a>
+    </div>
 
     </section>
 
