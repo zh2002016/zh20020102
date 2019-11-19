@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一个简单的综合演示</title>
+    <style>
+        /* 通过注释描述css类的作用，方便自己理解页面的样式以及组成 */
+        /* 去掉多余的边距 */
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        /*最上方返回菜单样式 
+    */
+        .top-menu {
+            /* 文本要靠右 */
+            text-align: right;
+            /* 需要背景颜色 */
+            background-color: #303f9f;
+            /* 
+            元素的内边距，意思是该元素和里面的元素分开
+            padding后面的四个值分别是上右下左的边距值
+             */
+            padding: 0.5em 0.5em 0.5em 0.5em;
+        }
+
+        /* 头部菜单的超链接样式 */
+        .top-a {
+            /* 颜色 */
+            color: #ffffff;
+            /* 去掉下划线 */
+            text-decoration: none;
+            /* 字体大小 */
+            font-size: 1.2rem;
+        }
+
+        /* 标题的样式 */
+        .title {
+            background-color: #3F51B5;
+            color: #ffffff;
+            text-align: center;
+            font-size: 2rem;
+            /* 如果padding只给 一个值表示上右下左都是相同的值 */
+            padding: 1rem;
+        }
+
+
+        /* 标题文字突出显示 */
+        .title-text {
+            color: #FF4081;
+            font-size: 1.2em;
+        }
+        /* 描述文本的样式 */
+        .info{
+        color: #BDBDBD;
+        font-size: 0.8rem;
+        background-color: #3F51B5;
+        text-align: center;
+        /* padding如果只有两个值，，分别是上下和左右，如果只有一个值表示上右下左 */
+        padding: 0.2em 0em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 这里啊头部菜单 -->
+    <header class="top-menu">
+        <a class="top-a" href="index.html">返回首页</a>
+    </header>
+
+    <!-- 网站主体部分 -->
+    <main>
+        <section class="title">
+            <span class="title-text">黑暗骑士</span>的网站
+        </section>
+        <!-- 简介部分 -->
+        <section class="info">
+        我是奥特曼，就打小怪兽小怪兽别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑
+        </section>
+    </main>
+
+    
+</body>
+
+</html>
