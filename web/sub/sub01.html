@@ -54,14 +54,15 @@
             color: #FF4081;
             font-size: 1.2em;
         }
+
         /* 描述文本的样式 */
-        .info{
-        color: #BDBDBD;
-        font-size: 0.8rem;
-        background-color: #3F51B5;
-        text-align: center;
-        /* padding如果只有两个值，，分别是上下和左右，如果只有一个值表示上右下左 */
-        padding: 0.2em 0em;
+        .info {
+            color: #BDBDBD;
+            font-size: 0.8rem;
+            background-color: #3F51B5;
+            text-align: center;
+            /* padding如果只有两个值，，分别是上下和左右，如果只有一个值表示上右下左 */
+            padding: 0.2em 0em;
         }
     </style>
 </head>
@@ -79,18 +80,24 @@
         </section>
         <!-- 简介部分 -->
         <section class="info">
-        我是奥特曼，就打小怪兽小怪兽别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑
+            我是奥特曼，就打小怪兽小怪兽别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑别跑
         </section>
     </main>
     <div>
-         <!--
+        <!--
     audio是音频控件
     autiplay表示自动播放
     contorls表示显示播放控制
     loop表示循环播放
     src是音乐文件地址
     -->
-   <audio autoplay controls loop src=""></audio>
+        <audio controls loop src="../sss.mp3"></audio>
+        <!-- 
+       video是嵌入视频的标记
+       src是视频文件的地址
+       controls是显示视频播放控制
+    -->
+        <video style="width: 300px;" controls src=""></video>
 
     </div>
 </body>
