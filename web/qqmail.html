@@ -6,40 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>法老王</title>
-    <style>
-        body {
-            padding: 0px;
-            margin: 0px;
-        }
+    <link rel="stylesheet" href="qqmail.css">
 
-        .dibu {
-            text-align: center;
-            background-color: #d6dfea;
-            padding: 0.5em;
-            font-size: 0.8em;
-        }
-
-        .info {
-            color: #b6b6b6;
-        }
-
-        a {
-            text-decoration: none;
-            color: #1d5494;
-        }
-
-        a:hover {
-            text-decoration: underline;
-
-        }
+    
     </style>
 
 </head>
 
 <body>
+    <!-- 头部 -->
+    <header>
+        <!-- 左边的logo -->
+        <section>
+            <img src="qqmail.png" alt="">
+        </section>
+        <!-- 右边的链接 -->
+        <section>
+            <a href="#">基本版</a>
+            |
+            <a href="#">English</a>
+            |
+            <a href="#">手机版</a>
+            |
+            <a href="#">企业邮箱</a>
+        </section>
+    </header>
+    <!-- 中间 -->
+    <main>
+        <div class="main-left">
+            左边的文字和图片
+        </div>
+        <div class="main-right">
+            <!-- 第一行 -->
+            <section class="main-right01">
+                <div>微信登录</div>
+                <div>QQ登录</div>
+            </section>
 
+            <!-- 第二行 -->
+            <section class="main-right-login">
+                <div class="myinput bottom-margin">
+                    <input type="text" placeholder="支持QQ号/邮箱/手机登录">
+                </div>
+                <div class="myinput bottom-margin">
+                    <input type="text" placeholder="QQ密码">
+                </div>
 
+                <div class="bottom-margin">
+                    <label>
+                        <input type="checkbox">下次自动登录
+                    </label>
+                </div>
 
+                <div class="login-button">
+                    登&nbsp;&nbsp;录
+                </div>
+
+                <div class="qrcode bottom-margin">
+                    <img src="qqmail02.png">扫码快捷登录
+                </div>
+                
+                <div class="wlmm">
+                    <a href="#">忘了密码？</a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- 底部区域 -->
     <footer class="dibu">
         <a href="#">关于腾讯</a>
         |
@@ -58,5 +93,6 @@
         </span>
     </footer>
 </body>
+
 
 </html>
